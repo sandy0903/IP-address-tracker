@@ -1,13 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-/*
-*{
-    margin:0;
-    padding:0;
-    overflow:hidden;
-    box-sizing: border-box;
-}
-*/
+
 body{
     font-family: 'Rubik', sans-serif;
     margin:0;
@@ -38,6 +31,7 @@ img{
     min-height:40vh;
     width:100%;
     height:100%;
+    
      
 }
 
@@ -50,6 +44,7 @@ img{
 .search{
     width:100%;
     display:inline-flex;
+    
     
     
 }
@@ -132,5 +127,67 @@ img{
     background: url("images/map-marker-solid.svg");
     background-repeat: no-repeat;
 
+    
+}
+@media only screen and (max-width: 375px) {
+    *{
+        box-sizing: border-box;
+    }
+    .top-section h1{
+        font-size:1.4rem;
+    }
+    .search{
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+    .search input{
+        margin-left:0;
+        width:60%;
+        background-color:#fff;
+        color:#000;
+        height:100%;
+    }
+    .search img{
+        height:100%;
+        width:45px;
+    }
+    .content{
+        flex-direction:column;
+        width:80%;
+        align-items: center;
+        border-radius: 20px;
+        top:25vh;
+        box-shadow:5px 5px 9px rgb(0,0,0,0.3);
+        z-index:3;
+
+    }
+
+    .content div{
+        width:100%;
+        height:10vh;
+        text-align:center;
+        border-color: #fff;
+
+    }
+    .content div h3{
+        padding:0.5rem;
+        margin:0;
+        font-size:0.75rem;
+        text-align:center;
+    }
+    .content div p{
+        padding:0.5rem;
+        margin:0;
+        font-size:1.3rem;
+    }
+    .content div:nth-child(1){
+        border-radius:10px 10px 0 0px;
+    }
+    .content div:last-child{
+        border-right:0;
+        border-radius:0px 0px 10px 10px;
+    }
+        
     
 }
