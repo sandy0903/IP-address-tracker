@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+/*
+*{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+*/
+body{
+    font-family: 'Rubik', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    
+
+}
+
+
+img{
+    background-color: black;
+}
+.wrapper{
+    min-height:90vh;
+    width:100%;
+    height:100%;
+}
+.top-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:url("images/pattern-bg.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    min-height:40vh;
+    width:100%;
+    height:100%;
+     
+}
+
+.top-section h1{
+    color:#fff;
+    padding:1.5rem 0;
+    letter-spacing: 1px;
+    font-weight:400;
+}
+.search{
+    width:100%;
+    display:inline-flex;
+    
+    
+}
+.search input{
+    padding:1rem;
+    border-radius:10px 0 0 10px;
+    width:30%;
+    margin-left:33%;
+    border:none;
+    font-weight:500;
+    background-color:#eee;
+}
+.search input:focus{
+    outline:none;
+}
+.search img{
+   width:10px;
+   height:10px;
+   padding:1.2rem;
+   border-radius:0 10px 10px 0;
+   cursor:pointer;
+}
+
+.content{
+    display:flex;
+    position:absolute;
+    top:30vh;
+    width:60%;
+    z-index:5;
+    box-shadow:10px 10px 10px rgb(0,0,0,0.5);
+    border-radius:10px;
+    
+}
+.content div{
+    background-color:#fff;
+    font-size:14px;
+    width:30%;
+    height:18vh;
+    border-right:1px solid #999;
+    z-index:3;
+
+}
+.content div:nth-child(1){
+    border-radius:10px 0 0 10px;
+}
+.content div:last-child{
+    border-right:0;
+    border-radius:0px 10px 10px 0;
+}
+
+.content div h3{
+    color:#999;
+    text-align: left;
+    padding:2rem 0 0 2rem;
+    text-transform:uppercase;
+    
+}
+.content div p{
+    padding:0 0 0 2rem;
+}
+
+#map{
+    position: absolute; 
+    top:40vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height:60vh;
+    z-index:1;
+    padding:0;
+    margin:0;
+    width:100%;
+
+    
+}
+#map img{
+    width:100%;
+}
+.my-div-icon{
+    background: url("images/map-marker-solid.svg");
+    background-repeat: no-repeat;
+
+    
+}

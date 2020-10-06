@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" Set-Cookie:promo_shown=1; Max-Age=2600000; SamtSite="Lax" Secure  content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+  <script src="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.js"></script>
+  <script src="https://cdn.maptiler.com/mapbox-gl-leaflet/latest/leaflet-mapbox-gl.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.maptiler.com/mapbox-gl-js/v1.5.1/mapbox-gl.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <link rel="stylesheet"  href="style.css">
+
+
+
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+<body>
+  <div class="wrapper">
+    
+    <div class="top-section">
+        <h1>IP Address Tracker</h1>
+        <div class="search">
+          <input id="infor" type="email" placeholder="Search for any IP address or domain"> 
+          <img id="btn" src="images/icon-arrow.svg">
+          
+        </div>
+        <div class="content">
+            <div >
+                <h3>  IP Address</h3>
+                <p class="ip"></p>
+            </div>
+            <div >
+                <h3>  Location</h3>
+                <p class="locate"></p>
+            </div>
+            <div >
+                <h3>  Timezone</h3>
+                <p class="utc"></p>
+            </div>
+            <div >
+                <h3>  Isp</h3>
+                <p class="isp"></p>
+            </div>
+        </div>
+
+    </div>
+  
+    <div id="map">
+    
+    
+      <p><a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a></p>
+
+  </div>
+ 
+  
+     <script src="main.js"></script>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
